@@ -1,0 +1,76 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "API Testing in Cypress",
+    "line": 1,
+    "id": "api-testing-in-cypress",
+    "tags": [],
+    "uri": "api.feature",
+    "elements": [
+      {
+        "id": "api-testing-in-cypress;verify-get-api-response",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify GET API response",
+        "tags": [
+          {
+            "name": "@skip",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "endpoint",
+                      "https://jsonplaceholder.typicode.com/posts/1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have a GET API endpoint",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "status",
+                      "200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "The response status should be 200",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The response should contain the title",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

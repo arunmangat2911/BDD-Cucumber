@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "iFrame Handling",
+    "line": 1,
+    "id": "iframe-handling",
+    "tags": [],
+    "uri": "iframe.feature",
+    "elements": [
+      {
+        "id": "iframe-handling;interact-with-an-element-inside-an-iframe",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Interact with an element inside an iFrame",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit the iframe page",
+            "result": {
+              "status": "passed",
+              "duration": 1593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I type \"Hello from Cypress!\" in the iframe",
+            "result": {
+              "status": "failed",
+              "duration": 4011000000,
+              "error_message": "CypressError: Timed out retrying after 4000ms: `cy.clear()` failed because it requires a valid clearable element.\n\nThe element cleared was:\n\n  > `<body id=\"tinymce\" class=\"mce-content-body mce-content-readonly\" data-id=\"mce_0\" aria-label=\"Rich Text Area. Press ALT-0 for help.\" spellcheck=\"false\" contenteditable=\"false\">...</body>`\n\nA clearable element matches one of the following selectors:\n  'a[href]'\n  'area[href]'\n  'input'\n  'select'\n  'textarea'\n  'button'\n  'iframe'\n  '[tabindex]'\n  '[contenteditable]'\n    at throwError (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:114856:70)\n    at onReady (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:114880:15)\n    at runAllChecks (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:112417:14)\n    at retryActionability (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:112439:16)\n    at tryCatcher (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:4285:29)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise.attempt.Promise.try (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:4275:9)\n    at whenStable (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:144490:68)\n    at <unknown> (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:144431:14)\n    at tryCatcher (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at IframePage.typeInIframe (cypress/pageObjects/IframePage.js:8:32)\n    at Context.eval (cypress/e2e/step-definitions/iframeSteps.js:9:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:118322:20)\n    at tryCatcher (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:118333:66)\n    at Context.then (https://the-internet.herokuapp.com/__cypress/runner/cypress_runner.js:118584:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see \"Hello from Cypress!\" inside the iframe",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

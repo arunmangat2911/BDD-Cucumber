@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Mock API response",
+    "line": 1,
+    "id": "mock-api-response",
+    "tags": [],
+    "uri": "mockApi.feature",
+    "elements": [
+      {
+        "id": "mock-api-response;mock-a-get-api-response",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Mock a GET API response",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I mock the API endpoint \"https://jsonplaceholder.typicode.com/posts/1\"",
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to the endpoint",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should receive a mocked response with title \"Mocked API Title\"",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

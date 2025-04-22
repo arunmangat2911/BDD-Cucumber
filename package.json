@@ -1,0 +1,42 @@
+{
+  "name": "cypressinterviewtest1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "execute:script": "cypress run",
+    "electron": "cypress run",
+    "chrome": "cypress run --browser chrome --env TAGS='not @skip'",
+    "retry-chrome": "cypress run --browser chrome --env TAGS='@retry'",
+    "retry-electron": "cypress run --env TAGS='@retry'",
+    "pretest": "node ./cypress/reporting/delete-results.js",
+    "posttest": "node ./cypress/reporting/report.js",
+    "test": "npm run execute:script || npm run posttest",
+    "test:chrome": "npm run chrome || npm run posttest",
+    "test:electron": "npm run electron || npm run posttest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "cypress": "^14.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-downloadfile": "^1.2.4",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-lighthouse": "^0.1.0",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "rimraf": "^6.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/step-definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

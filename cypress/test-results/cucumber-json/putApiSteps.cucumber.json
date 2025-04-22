@@ -1,0 +1,81 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate PUT API response",
+    "line": 1,
+    "id": "validate-put-api-response",
+    "tags": [],
+    "uri": "putApiSteps.feature",
+    "elements": [
+      {
+        "id": "validate-put-api-response;successfully-update-a-resource",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successfully update a resource",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have a PUT API endpoint \"https://jsonplaceholder.typicode.com/posts/1\"",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "body",
+                      "userId"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Updated Cypress",
+                      "API Testing Advanced",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I update the resource with",
+            "result": {
+              "status": "passed",
+              "duration": 916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The response should be 200",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The response should contain the updated title \"Updated Cypress\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Handling Dynamic Elements in E-commerce Checkout",
+    "line": 1,
+    "id": "handling-dynamic-elements-in-e-commerce-checkout",
+    "tags": [],
+    "uri": "dynamicElements.feature",
+    "elements": [
+      {
+        "id": "handling-dynamic-elements-in-e-commerce-checkout;successfully-place-an-order",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successfully place an order",
+        "tags": [
+          {
+            "name": "@skip",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit the shop page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I add a product to the cart",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I proceed to checkout",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the order confirmation message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

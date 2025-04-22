@@ -1,0 +1,116 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Purchase a Product",
+    "line": 1,
+    "id": "purchase-a-product",
+    "tags": [],
+    "uri": "purchase.feature",
+    "elements": [
+      {
+        "id": "purchase-a-product;successfully-purchase-an-item",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successfully purchase an item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 1454000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I proceed to checkout",
+            "result": {
+              "status": "failed",
+              "duration": 5000000000,
+              "error_message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.buy-now`, but never found it.\n    at EcommercePage.proceedToCheckout (cypress/pageObjects/EcommercePage.js:12:46)\n    at Context.eval (cypress/e2e/step-definitions/dynamicElementsSteps.js:13:18)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:118322:20)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:118333:66)\n    at Context.then (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:118584:21)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstName",
+                      "lastName",
+                      "postalCode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "John",
+                      "Doe",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in checkout details",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I complete the purchase",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the order confirmation",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

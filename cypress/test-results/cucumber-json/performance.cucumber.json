@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Performance Testing",
+    "line": 1,
+    "id": "performance-testing",
+    "tags": [],
+    "uri": "performance.feature",
+    "elements": [
+      {
+        "id": "performance-testing;measure-page-load-time",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Measure page load time",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit the website \"https://example.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "The page load time should be under 2 seconds",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "The network request time should be under 1 second",
+            "result": {
+              "status": "passed",
+              "duration": 288000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

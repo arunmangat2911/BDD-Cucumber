@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Banner background color verification",
+    "line": 1,
+    "id": "banner-background-color-verification",
+    "tags": [],
+    "uri": "bannerColor.feature",
+    "elements": [
+      {
+        "id": "banner-background-color-verification;verify-background-color-of-the-first-banner",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify background color of the first banner",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the example Cypress website",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I get the background color of the first banner",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "it should be \"#00bf88\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

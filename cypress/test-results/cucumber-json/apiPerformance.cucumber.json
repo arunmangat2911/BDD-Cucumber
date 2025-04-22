@@ -1,0 +1,45 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "API Performance Testing",
+    "line": 1,
+    "id": "api-performance-testing",
+    "tags": [],
+    "uri": "apiPerformance.feature",
+    "elements": [
+      {
+        "id": "api-performance-testing;validate-api-response-time",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate API response time",
+        "tags": [
+          {
+            "name": "@skip",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I send a GET request to \"https://jsonplaceholder.typicode.com/posts/1\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "The API response time should be under 500ms",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

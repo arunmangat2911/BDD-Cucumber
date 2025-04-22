@@ -1,0 +1,54 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "File Download Testing",
+    "line": 1,
+    "id": "file-download-testing",
+    "tags": [],
+    "uri": "fileDownload.feature",
+    "elements": [
+      {
+        "id": "file-download-testing;download-a-file-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Download a file successfully",
+        "tags": [
+          {
+            "name": "@skip",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit the file download page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I download a file \"ResumeDinu_28.02.pdf\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the file saved in my downloads folder",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

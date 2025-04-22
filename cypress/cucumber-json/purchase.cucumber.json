@@ -1,0 +1,118 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Purchase a Product",
+    "line": 1,
+    "id": "purchase-a-product",
+    "tags": [],
+    "uri": "purchase.feature",
+    "elements": [
+      {
+        "id": "purchase-a-product;successfully-purchase-an-item",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successfully purchase an item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I proceed to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 151000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstName",
+                      "lastName",
+                      "postalCode"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "John",
+                      "Doe",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I fill in checkout details",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I complete the purchase",
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the order confirmation",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

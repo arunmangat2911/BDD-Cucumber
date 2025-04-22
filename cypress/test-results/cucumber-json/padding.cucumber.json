@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Banner padding verification",
+    "line": 1,
+    "id": "banner-padding-verification",
+    "tags": [],
+    "uri": "padding.feature",
+    "elements": [
+      {
+        "id": "banner-padding-verification;verify-full-padding-of-the-first-banner",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify full padding of the first banner",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the example Cypress website",
+            "result": {
+              "status": "passed",
+              "duration": 194000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "It should should be \"25px 0px 35px\"",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

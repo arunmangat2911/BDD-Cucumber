@@ -1,0 +1,81 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate POST API response",
+    "line": 1,
+    "id": "validate-post-api-response",
+    "tags": [],
+    "uri": "postApi.feature",
+    "elements": [
+      {
+        "id": "validate-post-api-response;successfully-create-a-new-resource",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successfully create a new resource",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have a POST API endpoint \"https://jsonplaceholder.typicode.com/posts\"",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "body",
+                      "userId"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Cypress",
+                      "Learning API Automation",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send the following request body",
+            "result": {
+              "status": "passed",
+              "duration": 407000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The response status should be 201",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The response should contain the title \"Cypress\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

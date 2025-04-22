@@ -1,0 +1,43 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Core Web Vitals Testing",
+    "line": 1,
+    "id": "core-web-vitals-testing",
+    "tags": [],
+    "uri": "lighthouse.feature",
+    "elements": [
+      {
+        "id": "core-web-vitals-testing;validate-lighthouse-performance-score",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate Lighthouse performance score",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit \"https://example.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 355000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "The performance score should be above 80",
+            "result": {
+              "status": "failed",
+              "duration": 24000000,
+              "error_message": "CypressError: `cy.task('lighthouse')` failed with the following error:\n\nThe task 'lighthouse' was not handled in the setupNodeEvents method. The following tasks are registered: downloadFile\n\nFix this in your setupNodeEvents method here:\n/Users/arunmk/Documents/ArunPersonalCypress/CypressInterviewTest1/cypress.config.js\n    at <unknown> (https://example.com/__cypress/runner/cypress_runner.js:135851:72)\n    at tryCatcher (https://example.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://example.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://example.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://example.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://example.com/__cypress/runner/cypress_runner.js:1667:18)\n    at <unknown> (https://example.com/__cypress/runner/cypress_runner.js:2362:25)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://example.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise._then (https://example.com/__cypress/runner/cypress_runner.js:1209:17)\n    at Promise._passThrough (https://example.com/__cypress/runner/cypress_runner.js:4080:17)\n    at Promise.lastly.Promise.finally (https://example.com/__cypress/runner/cypress_runner.js:4089:17)\n    at Object.onRunnableRun (https://example.com/__cypress/runner/cypress_runner.js:163602:53)\n    at $Cypress.action (https://example.com/__cypress/runner/cypress_runner.js:41559:28)\n    at Runnable.run (https://example.com/__cypress/runner/cypress_runner.js:146184:13)\n    at next (https://example.com/__cypress/runner/cypress_runner.js:155969:10)\n    at <unknown> (https://example.com/__cypress/runner/cypress_runner.js:156013:5)\n    at timeslice (https://example.com/__cypress/runner/cypress_runner.js:146524:27)\nFrom Your Spec Code:\n    at Context.eval (node_modules/@cypress-audit/lighthouse/src/command-handler.js:46:0)\n    at getRet (https://example.com/__cypress/runner/cypress_runner.js:118322:20)\n    at tryCatcher (https://example.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://example.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://example.com/__cypress/runner/cypress_runner.js:118333:66)\n    at Context.then (https://example.com/__cypress/runner/cypress_runner.js:118584:21)\n    at wrapped (https://example.com/__cypress/runner/cypress_runner.js:138835:19)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
